@@ -2,6 +2,8 @@
 
 require "index.php";  //for connection to db
 
+//This is the main file
+
 $statusMsg = '';
 
 //file download path
@@ -43,7 +45,7 @@ if(!empty($_FILES["file"]["name"])) {
 
 //next is to process the file which can be found at <<<$targetFilePath>>>
 /*
-       processing logic goes here on file directory
+       processing logic goes here on the file 
        
        $targetFilePath
 
@@ -78,7 +80,7 @@ catch(Exception $e){
 
 
 
-//fetch all exisiting file directory
+//fetch all exisiting file directory to return to server A
 try{
     $sql = "SELECT content FROM files";
     $result = $conn->query($sql);

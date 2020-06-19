@@ -5,7 +5,11 @@ require "index.php";
 
 
 
-//fetch all exisiting file directory
+//load all file directories earlier receiced
+//This was just to confirm the files were received
+//This is not needed for resumeGo
+
+
 try{
   $sql = "SELECT content FROM files";
   $result = $conn->query($sql);

@@ -1,5 +1,8 @@
 <?php
 
+//just for db in prod
+
+
 if (file_exists("config.dev.php")) {
     $local_config = require "config.dev.php";   //for dev environment, load this. ps: not pushed to prod
     return $local_config;
