@@ -82,7 +82,7 @@ if($err) die($err);
 
 ?>
 
-
+<strong> <?php echo $statusMsg; ?> </strong>  <br>
 <!-- handling of the response from server B goes here -->
 <strong> <?php echo "Successful so I loaded this txt type resume file already saved on server B back to confirm both way communication \n\n"; ?> </strong>
 
