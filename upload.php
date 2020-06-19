@@ -28,7 +28,7 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])) {
 
         //upload file to server
         if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
-            $statusMsg = "The file ".$fileName. " has been uploaded to this server.";
+            // $statusMsg = "The file ".$fileName. " has been uploaded to this server.";
         
         }else{
             $statusMsg = "Sorry, there was an error uploading your file to server A.";
@@ -42,8 +42,9 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])) {
     $statusMsg = 'Please select a file to upload.';
 }
 
-//display status message
-echo $statusMsg;
+// //display status message
+// echo "<br>";
+// echo $statusMsg;
 
 
 //now move from server A to server B
@@ -82,9 +83,9 @@ if($err) die($err);
 
 ?>
 
-<strong> <?php echo $statusMsg; ?> </strong>  <br>
+
 <!-- handling of the response from server B goes here -->
-<strong> <?php echo "Successful so I loaded all the receieved directories on server B back to confirm both way communication \n\n"; ?> </strong>
+<strong> <?php echo "\n\nSuccessful upload to server B so I loaded all the receieved directories on server B back to confirm both way communication as shown above \n\n"; ?> </strong>
 
 <?php
 if ($result) die(json_decode($result));
