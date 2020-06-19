@@ -48,7 +48,7 @@ echo $statusMsg;
 
 //now move from server A to server B
 
-$target_url = 'http://localhost:7000/destination.php';
+$target_url = 'https://server-b-a.herokuapp.com/server_b/destination.php';
 //This needs to be the full path to the file you want to send.
 
 $file_name_with_full_path = realpath($targetFilePath); //bring the file initially saved
