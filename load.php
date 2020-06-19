@@ -4,37 +4,29 @@
 require "index.php";
 
 
-//fetch last file directory
+
+//fetch all exisiting file directory
 try{
-    $sql = "SELECT content FROM files ORDER BY id DESC LIMIT 1";
-    $result = $conn->query($sql);
-    $fetched_directory = [];  //only one is expected
+  $sql = "SELECT content FROM files";
+  $result = $conn->query($sql);
 
-    if ($result->num_rows > 0) {
-        // output data of each row
+  $fetched_directories = [];
 
-        while($row = $result->fetch_assoc()) {
-          array_push ($fetched_directory , $row['content']);
-        }
-      } else {
-        die("Nothing saved yet");
+  if ($result->num_rows > 0) {
+      // output data of each row
+
+      while($row = $result->fetch_assoc()) {
+        array_push ($fetched_directories , $row['content']);
       }
-      $conn->close();
+    } else {
+      die("Nothing saved yet");
+    }
+    $conn->close();
 }
 
 catch (Exception $e){
-    die("could not retrieve directory from database");
+  die("could not retrieve directories from database");
 }
 
 
-
-//load the file into browser    //I am only loading pdf files, others will not load
-$filename = $fetched_directory[0]; 
-    
-// Header content type 
-header("Content-type: application/pdf"); 
-  
-header("Content-Length: " . filesize($filename)); 
-  
-// Send the file to the browser. 
-readfile($filename); 
+die(var_dump($fetched_directories));
