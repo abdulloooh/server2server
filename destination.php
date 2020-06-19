@@ -1,5 +1,7 @@
 <?php
 
+require "index.php";  //for connection to db
+
 $statusMsg = '';
 
 //file download path
@@ -37,6 +39,8 @@ if(!empty($_FILES["file"]["name"])) {
     $statusMsg = 'Server A sent an empty file';
 }
 
+
+
 //next is to process the file which can be found at <<<$targetFilePath>>>
 /*
        processing logic goes here on file directory
@@ -53,8 +57,49 @@ if(!empty($_FILES["file"]["name"])) {
     
 */
 
-//BUT, no processing logic yet, so let us just so confirmation by reading a file already saved and dumping it back
+//BUT, no processing logic yet, so let us just do ensure some confirmation by returning all existing directories
 
-$read = readfile("downloads/a.txt");   //this file was saved already just to mimick the output that will come after file processing
-//return status of file
-die($read);
+
+//save the file directory into db 
+try{
+
+    $sql = "INSERT INTO `files` (content) VALUES ('{$targetFilePath}')";
+    if ($conn->query($sql) === TRUE) {
+        echo ("Uploaded to server B successful");
+      } else {
+        die("Error: " . $sql . "<br>" . $conn->error);
+      }
+      
+}
+
+catch(Exception $e){
+    die("File failed to save");
+}
+
+
+
+//fetch all exisiting file directory
+try{
+    $sql = "SELECT content FROM files";
+    $result = $conn->query($sql);
+
+    $fetched_directories = [];
+
+    if ($result->num_rows > 0) {
+        // output data of each row
+
+        while($row = $result->fetch_assoc()) {
+          array_push ($fetched_directories , $row['content']);
+        }
+      } else {
+        die("Nothing saved yet");
+      }
+      $conn->close();
+}
+
+catch (Exception $e){
+    die("could not retrieve directories from database");
+}
+
+
+die(var_dump($fetched_directories));
