@@ -1,0 +1,56 @@
+
+Abdullah Akinwumi Oladipo
+Software Developer/Electronic and Electrical Engineering Graduate
+abdulloooh (github)
++2349036058937
+abdullahakinwumi@gmail.com
+EDUCATION
+OAU, Nigeria — B. Sc.
+First class Fresh Graduate, Electronic and Electrical Engineering. FEB, 2020.
+
+WORK EXPERIENCE
+Al-Hijra College, Lagos-Ibadan Expressway, Ogun State — ICT Support Intern
+FEB 2020 - PRESENT (TILL JUNE 30, 2020)
+Working closely with my director in providing needs of students with skills in modern ICT, management of school portal, scouting and integrating latest digital trends in the education sector with coordination of online learning.
+Laplace Data, Nigeria — Developer/Creator
+FEB 2020 - PRESENT
+Developed my automated data dispensing  web app, continuous integration of new and latest features for better user experience and creating similar websites for my clients.
+
+PROJECTS
+Laplace Data — Data Dispensing App
+Web App (PWA) built for selling and management of network data. Technologies: Javascript, PHP,MySQL, OneSignal.
+Smart Home System — Final Year Project
+Designed and developed an ESP32 based IoT smart meter that can be remotely controlled to switch loads at home and monitor power consumption from a web dashboard built on Ubidots. Technologies: ESP32 hardware, Current sensor, Relays, C++, Ubidots Platform.
+Project Management App — To-do Provisional App
+Built a Website to manage personal projects based on project names and corresponding actions,built in a coding challenge with VGG, Nigeria. Technologies: Javascript, HTML5, CSS3.
+
+OPEN SOURCE CONTRIBUTIONS
+A Quran/Hadith Webapp — Daily Islamic Reminder
+Co-creator to a Qur’an revising and hadith App with daily push reminder and audio recitation with different Islamic reciters. All rights go to Teezan, the original creator of the project. Technologies: Vue, OneSignal, Zapier
+AMWTQ — Ramadan Provisional App
+Built to track Quran recitation & challenge completion of AMWTQ members during Ramadan. Technologies: Javascript, PHP, bootstrap.
+SKILLS
+Tools:  Git, Github, IBM Watson Assistants (Chatbots).
+Programming Languages: Javascript, PHP, Python
+Web Frameworks: Bootstrap, React, Vue
+Database: MySQL
+Interests: Public Speaking, Software Development, Cybersecurity, Automation, and Tutoring.
+Extracurriculars: Football, Table-tennis, tutoring, charity volunteering, debating.
+    • 
+LEADERSHIP/INVOLVEMENTS
+OAU, Nigeria —2019
+Chairman and Coding Instructor of more than 50 members of Software Club, Electronic and Electrical Engineering Department
+OAU, Nigeria —2019
+Academic Chairman and Tutor, Faculty of Technology Muslim Students' Association.
+
+AWARDS/CERTIFICATIONS
+2020
+Mastering React from Mosh
+How to build Chatbots from IBM
+2019
+Cisco ITEssentials from Cisco
+HSE 1,2 & 3 from NISCN
+2019
+Won second place out of 12 teams in  VGG Hackathon, OAU as a member of Team Skrypt, participated as an Orator and Web developer (Javascript) for A Fingerprint Attendance System
+Others Awards
+
